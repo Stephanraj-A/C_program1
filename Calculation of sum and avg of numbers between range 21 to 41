@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int start = 21, end = 40;
+    int sum = 0, count = 0;
+    float average;
+
+    for (int i = start; i <= end; i++) {
+        sum += i;
+        count++;
+    }
+    average = (float)sum / count;
+
+    printf("Sum of numbers from %d to %d is: %d\n", start, end, sum);
+    printf("Average of numbers from %d to %d is: %.2f\n", start, end, average);
+
+    return 0;
+}
